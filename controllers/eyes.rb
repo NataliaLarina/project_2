@@ -1,0 +1,4 @@
+class EyesController < ApplicationController
+
+
+end

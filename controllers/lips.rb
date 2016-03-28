@@ -1,0 +1,4 @@
+class LipsController < ApplicationController
+
+
+end

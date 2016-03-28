@@ -1,0 +1,4 @@
+class SkincareController < ApplicationController
+
+
+end
