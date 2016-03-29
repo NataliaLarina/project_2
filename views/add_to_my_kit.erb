@@ -1,0 +1,89 @@
+<div class="container-fluid">
+<select id="category" name"test1">
+  <option value="none">---Please select---</option>
+  <option value="skincare">Skincare</option>
+  <option value="face">Face</option>
+  <option value="eyes">Eyes</option>
+  <option value="lips">Lips</option>
+  </select>
+  <br></br>
+  <br></br>
+  <!-- <audio controls>
+    <source src="/sounds/1_person_cheering-me-8140.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio> -->
+  <!-- <audio id="player" controls>
+    <source type="audio/wav" src>
+  </audio> -->
+  <audio autoplay="autoplay" controls="controls">
+  <source src="/sounds/1_person_cheering-me-8140.wav" type="audio/wav">
+</audio>
+<br></br>
+<fieldset class="form-group">
+  <div class="col-xs-6">
+  <label for="product">Product</label>
+  <input type="text" class="form-control" id="product">
+  </div>
+  <br></br>
+<form action="/account/brand" method="post">
+  <fieldset class="form-group">
+    <div class="col-xs-6">
+    <label for="form_brand">Brand</label>
+    <input type="text" class="form-control" id="form_brand">
+  </div>
+  </fieldset>
+  <fieldset class="form-group">
+    <div class="col-xs-6">
+    <label for="name2">Name</label>
+    <input type="text" class="form-control" id="name2">
+    </div>
+  </fieldset>
+  <fieldset class="form-group">
+    <div class="col-xs-6">
+    <label for="description">Description</label>
+    <textarea class="form-control" id="description" rows="4"></textarea>
+  </div>
+  </fieldset>
+  <fieldset class="form-group">
+    <div class="col-xs-6">
+    <label for="store">Store</label>
+    <input type="text" class="form-control" id="store">
+  </div>
+  </fieldset>
+  <fieldset class="form-group">
+      <div class="col-xs-6">
+    <p><strong>Add Product Image</strong></p>
+    <label class="file">
+      <input type="file" id="file">
+    <span class="file-custom"></span><button type="button" class="btn btn-primary btn-xs">Upload</button>
+    </label>
+  </div>
+</fieldset>
+<fieldset class="form-group">
+  <div class="col-xs-6">
+<p><strong>Price</strong></p>
+    <label class="sr-only" for="inputAmount">Amount (in dollars)</label>
+    <div class="input-group">
+      <div class="input-group-addon">$</div>
+      <input type="text" class="form-control" id="inputAmount" placeholder="Amount">
+      <div class="input-group-addon">.00</div>
+    </div>
+    </div>
+  </fieldset>
+<br></br>
+<fieldset class="form-group">
+    <div class="col-xs-6">
+    <label for="web_URL">Web URL</label>
+    <input type="text" id="web_URL" placeholder="Add web URL"><a class="btn btn-primary" href="#" role="button">Link</a>
+</div>
+</fieldset>
+<br></br>
+<div class="col-xs-6">
+          <button type="button" class="btn btn-secondary btn-lg">Add item</button>
+</div>
+<div class="col-xs-6">
+<button type="button" class="btn btn-primary btn-lg">Check out your beauty bag!</button>
+</div>
+<br></br>
+</form>
+</div>
