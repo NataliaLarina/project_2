@@ -8,3 +8,4 @@ gem "sinatra-activerecord" #activerecord orm
 gem 'pry'
 gem 'sinatra-cross_origin'
 gem 'rerun', '~> 0.11.0'
+
