@@ -3,6 +3,20 @@ Bundler.require
 
 require 'sinatra/base'
 
+
+
+if ENV['DATABASE_URL']
+  DB = ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'])
+else
+  DB = ActiveRecord::Base.establish_connection(
+     :adapter => 'postgresql',
+     :database => 'makeup_kit',
+  )
+end
+
+
+
+
 require './models/account'
 require './models/product'
 require './models/addtokit'
