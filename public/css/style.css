@@ -1,6 +1,15 @@
 /*#bs-example-navbar-collapse-1 {
   display: inline;
 }*/
+li {
+  text-align: right;
+  font-size: 25px;
+}
+
+h1 {
+  text-align: center;
+  color: purple;
+}
 
 h3 {
   margin-top: 5px;
@@ -17,6 +26,24 @@ img {
   background-color: purple;
 }
 
+#makeupSet {
+  margin-top: 20px;
+  position: relative;
+  margin-left: 80px;
+}
+
+#form {
+  margin-left: 25%;
+   margin-right:25%;
+   width: 100%;
+}
+.form-horizontal{
+  margin: 0 auto;
+  width: 75%;
+}
+#category{
+  width: 75%;
+}
 .nav li {
   text-align: center;
   list-style: none;
@@ -60,6 +87,10 @@ p {
 #ourImage {
   height: 150px;
   width: 150px;
+}
+
+button a {
+  color: white;
 }
 /*.btn-default2 {
   background-color: #B19CD9;

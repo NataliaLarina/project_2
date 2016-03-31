@@ -24,7 +24,7 @@ end
 
 post '/' do
   # binding.pry
-
+  puts '==============thesse params'
   puts params
   puts '-----------------------------'
   @new_product = Product.create({

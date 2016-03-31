@@ -1,8 +1,26 @@
-<h1>All your products:</h1>
-  <% @all.each do |product| %>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+   <h1>~Your Beauty Kit~</h1>
+ </div>
+
+    </div>
+
+
+  <div class="row">
+    <div class="col-lg-8">
+<% @all.each do |product| %>
      <li>
       <%= product.category %> - <a href="/mykit/product/<%= product.id %>"><%= product.name %></a> - <%= product.brand %>
      </li>
   <% end %>
+</div>
+</div>
 
-  <img src="/images/makeupcollection.jpg" height="200px" width"300px" alt="" />
+<div class="row">
+  <div class="col-lg-3">
+   <img id="makeupSet" src="/images/makeupcollection.jpg" height="200px" width"300px" alt="" />
+   </div>
+ </div>
+
+</div>
