@@ -3,7 +3,8 @@ class AddtokitController < ApplicationController
 @new_product = ""
 
 get '/' do
-   erb :add_to_my_kit
+    session[:name]
+    erb :add_to_my_kit
 end
 
 # information needs to be posted somewhere
@@ -27,6 +28,7 @@ post '/' do
   puts params
   puts '-----------------------------'
   @new_product = Product.create({
+    category: params[:category],
     image: params[:image],
     product: params[:product],
     brand: params[:brand],
@@ -41,7 +43,10 @@ post '/' do
 
     @new_product.save
 
-    redirect '/'
+    redirect '/addtokit' do
+      erb :add_to_my_kit
+    end
+
   end
 
 

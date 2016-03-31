@@ -1,0 +1,8 @@
+<h1>All your products:</h1>
+  <% @all.each do |product| %>
+     <li>
+      <%= product.category %> - <a href="/mykit/product/<%= product.id %>"><%= product.name %></a> - <%= product.brand %>
+     </li>
+  <% end %>
+
+  <img src="/images/makeupcollection.jpg" height="200px" width"300px" alt="" />
