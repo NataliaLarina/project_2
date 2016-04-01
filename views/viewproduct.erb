@@ -1,11 +1,24 @@
-<img id="ourImage" src="<%= @current_product.image %>" alt="" />
-<h1><%= @current_product.category %></h1>
-<h1><%= @current_product.product %></h1>
-<h1><%= @current_product.brand %></h1>
-<h1><%= @current_product.name %></h1>
-<h1><%= @current_product.description %></h1>
-<h1><%= @current_product.store %></h1>
-<h1><%= @current_product.purchasedate %></h1>
+<div class="container">
 
-<h1><%= @current_product.price %></h1>
-<h1><a href="http://<%= @current_product.weblink %>"><%= @current_product.weblink %></a></h1>
+
+<div class="col-xs-10">
+
+
+<img id="ourImage" src="<%= @current_product.image %>" alt="" />
+
+
+<ul class="mylist">
+  <li><%= @current_product.category %></li>
+  <li><%= @current_product.product %></li>
+  <li><%= @current_product.brand %></li>
+  <li><%= @current_product.name %></li>
+  <li><%= @current_product.description %></li>
+  <li><%= @current_product.store %></li>
+  <li><%= @current_product.purchasedate %></li>
+  <li><%= @current_product.price %></li>
+  <li><a href="http://<%= @current_product.weblink %>"><%= @current_product.weblink %></a></li>
+</ul>
+
+</div>
+
+</div>

@@ -1,9 +1,10 @@
 /*#bs-example-navbar-collapse-1 {
   display: inline;
 }*/
-li {
-  text-align: right;
-  font-size: 25px;
+
+h2 {
+  text-align: center;
+  color: purple;
 }
 
 h1 {
@@ -29,14 +30,9 @@ img {
 #makeupSet {
   margin-top: 20px;
   position: relative;
-  margin-left: 80px;
+  margin-left: 40px;
 }
 
-#form {
-  margin-left: 25%;
-   margin-right:25%;
-   width: 100%;
-}
 .form-horizontal{
   margin: 0 auto;
   width: 75%;
@@ -87,11 +83,39 @@ p {
 #ourImage {
   height: 150px;
   width: 150px;
+  float: left;
+  margin: 0 25px 25px 0;
 }
 
 button a {
   color: white;
 }
+
+.list {
+
+list-style-type: disk;
+font-size: 25px;
+text-align: center;
+
+/*float: left;*/
+}
+
+.eachitem {
+  background-color: #E9DEFF;
+}
+
+.mylist  {
+  list-style-type: disk;
+  font-size: 25px;
+  text-align: left;
+
+}
+
+
+
+
+
+
 /*.btn-default2 {
   background-color: #B19CD9;
   position: relative;

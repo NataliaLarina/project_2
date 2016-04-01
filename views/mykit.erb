@@ -10,17 +10,35 @@
   <div class="row">
     <div class="col-lg-8">
 <% @all.each do |product| %>
-     <li>
-      <%= product.category %> - <a href="/mykit/product/<%= product.id %>"><%= product.name %></a> - <%= product.brand %>
+<ul class="list">
+     <li class="eachitem">
+      <!-- <%= product.category %>  -->
+     <a href="/mykit/product/<%= product.id %>"><%= product.name %></a> <%= product.brand %>
      </li>
+  </ul>
   <% end %>
-</div>
 </div>
 
 <div class="row">
+  <div class="col-lg-3">
+   <img id="makeupSet" src="/images/makeupcollection.jpg" height="300px" width"400px" alt="" />
+   </div>
+ </div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<!-- <div class="row">
   <div class="col-lg-3">
    <img id="makeupSet" src="/images/makeupcollection.jpg" height="200px" width"300px" alt="" />
    </div>
  </div>
 
-</div>
+</div> -->
